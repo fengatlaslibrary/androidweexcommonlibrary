@@ -11,6 +11,17 @@
  */
 package com.open.android.adapter;
 
+import android.os.Environment;
+import android.text.TextUtils;
+import android.util.Log;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.taobao.weex.adapter.IWXHttpAdapter;
+import com.taobao.weex.common.WXRequest;
+import com.taobao.weex.common.WXResponse;
+import com.taobao.weex.utils.WXLogUtils;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
@@ -24,20 +35,6 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Date;
 import java.util.Set;
-
-import android.graphics.Bitmap;
-import android.os.Environment;
-import android.text.TextUtils;
-import android.util.Log;
-
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import com.taobao.weex.WXSDKManager;
-import com.taobao.weex.adapter.IWXHttpAdapter;
-import com.taobao.weex.common.WXRenderStrategy;
-import com.taobao.weex.common.WXRequest;
-import com.taobao.weex.common.WXResponse;
-import com.taobao.weex.utils.WXLogUtils;
 
 /**
  ***************************************************************************************************************************************************************************** 
